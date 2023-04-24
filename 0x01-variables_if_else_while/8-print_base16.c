@@ -9,13 +9,21 @@ int main(void)
 {
 	char c;
 
-	c = 'z';
+	int d;
+
+	d = 0;
+	c = 'a';
 	while
-		(c >= 'a') {
-			putchar(c);
-			c--;
+		(d < 10) {
+			putchar(d + '0');
+			d++;
 		}
-	putchar('\n');
+	while
+		(c <= 'f') {
+			putchar(c);
+			c++;
+		}
+	putchar ('\n')
 	return (0);
 }
 

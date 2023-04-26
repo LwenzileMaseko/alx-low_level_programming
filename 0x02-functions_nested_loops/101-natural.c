@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * main - Prints the sum of all mutiples of 3 and 5 up to 1024
  * Return: Always (Success)
@@ -12,10 +14,10 @@ int main(void)
 	{
 	if ((1 % 3 == 0) || (i % 5 == 0))
 	{
-	z += i;	
+	z += i;
 	}
 	i++;
 	}
 	printf("%d\n", z);
 	return (0);
-}	
+}

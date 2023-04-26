@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the sum of all mutiples of 3 and 5 up to 1024
+ * main - Prints the sum of all mutiples of 3 or 5 up to 1024
  * Return: Always (Success)
  */
 
@@ -12,7 +12,7 @@ int main(void)
 
 	while (i < 1024)
 	{
-	if ((1 % 3 == 0) || (i % 5 == 0))
+	if ((i % 3 == 0) || (i % 5 == 0))
 	{
 	z += i;
 	}

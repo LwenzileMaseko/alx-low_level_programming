@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100, followed by a line
- * but for multiplies of three prints Fizz instead of the
+ * but for multiplies of three prints Fizz instead of the number
  * and for the multiplies of five print Buzz
  * Return: Always 0 (sucess)
  */
@@ -17,7 +17,7 @@ int main(void)
 		} else if (i % 5 == 0 && i % 3 != 0)
 		{
 			printf(" Buzz");
-		} else if (i % 3 == 0 && i % 5 != 0)
+		} else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf(" FizzBuzz");
 		} else if (i == 1)

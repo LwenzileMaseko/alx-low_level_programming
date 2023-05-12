@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 			result++;
 			k -= coins[m];
 		}
-	}	
+	}
 
 	printf("%d\n", result);
 	return (0);

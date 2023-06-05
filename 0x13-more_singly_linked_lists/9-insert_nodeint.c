@@ -22,16 +22,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	newnode->n = n;
 	newnode->next = NULL;
 
-	if (i == 0)
+	if (idx == 0)
 	{
 		newnode->next = *head;
 		*head = newnode;
 		return (newnode);
 	}
 
-	for (k = 0; tempo && k < i; k++)
+	for (k = 0; tempo && k < idx; k++)
 	{
-		if (k == i - 1)
+		if (k == idx - 1)
 		{
 			newnode->next = tempo->next;
 			tempo->next = newnode;
@@ -43,4 +43,5 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	return (NULL);
 }
+
 
